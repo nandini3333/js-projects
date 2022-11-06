@@ -1,6 +1,6 @@
 .container{
-    width:70%;
-    height:580px;
+    width:80%;
+    height:650px;
     margin: auto;
     background-color: #3D087B;
     position:relative ;
@@ -40,11 +40,13 @@ option{
 }
 
 .grid{
-    height:500px;
-    width:80%;
+    height:565px;
+    width:70%;
     display:grid;
-    grid-template-columns: repeat(2,380px);
-    grid-template-rows:100px repeat(2,96px) 70px 50px;
+    /* grid-template-columns: repeat(2,300px) 250px; */
+    grid-template-columns: 200px 180px 370px;
+    /* grid-template-rows:100px repeat(2,96px) 70px 50px; */
+    grid-template-rows:100px 100px 100px 80px 50px 30px;
     background-color:#3D087B;
     position: absolute;
     top:0;
@@ -59,16 +61,19 @@ option{
 .griditems{
     border:1px;
     background-color: white;
-    border-radius: 4px;
+    border-radius: 6px;
     z-index:99;
+    overflow: hidden;
 }
 
 .item1{
     background-color:#3D087B;
+    grid-column:1/3 ;
 }
 
 .item2{
     grid-row: 2/4;
+    grid-column: 1/3;
     color: #3D087BDE;
     font: normal normal normal 14px/20px Manrope;
    
@@ -98,6 +103,8 @@ option{
 
 
 .item3{
+    grid-column: 3/4;
+    grid-row: 1/2;
     display: flex;
     align-items: center;
     justify-content: space-around;
@@ -164,7 +171,7 @@ option{
 .time4{ 
     position:absolute;
     top:30px;
-    left:313px;
+    left:305px;
     font-size: 35px;
 
 }
@@ -200,21 +207,223 @@ option{
 }
 
 .item6{
+    grid-column:1/3;
     border: 1px solid #EDEDED;
     background-color:#3D087BDE;
+    position: relative;
    
 }
 
 .item7{
+    
     background-image:linear-gradient(to right, #6E54EC, #CB52F8, #FC5EFF, #F1A7C5) ;
 }
 
 .alarm{
-    position:relative;
-    top:12px;
-    left:150px;
     font-weight: bolder;
     font-size: 1.3em;
     color: white;
 }
+button:hover span {
+    display: none
+  }
+  
+button:hover:before{
+    font-weight: bolder;
+    font-size: 1.3em;
+    color: white;
+    content: "Party Time!";
+  }
 
+ .item8{
+    grid-row :5/7;
+    grid-column: 2/3;
+    padding: 4px;
+    background-color:rgba(72, 72, 202, 0.3);
+    color:hsl(296, 99%, 68%);;
+}
+
+ @media  screen and (max-width : 400px) {
+    body{
+        height:300px;
+        background-color: #3D087B;
+        position:relative ;
+    }
+    .container{
+        width:80%;
+        margin: 0;
+        padding:0;
+    }
+
+    .grid{
+        height:800px;
+        width:400px;
+        display: block; 
+        background-color:#3D087B;
+        
+       
+    } 
+
+    .griditems{
+        border:1px;
+        background-color: white;
+        border-radius: 4px;
+        z-index:99;
+        width:280px;
+        height:100px;
+        margin-left:10px;
+        margin-bottom:8px;
+        
+    }
+    
+    .item1{
+        background-color:#3D087B;
+        margin: auto;
+
+    }
+    .item2{
+        height:350px;
+        color: #3D087BDE;
+        font: normal normal normal 14px/20px Manrope;
+        padding:5px 0px 5px 5px;
+         margin-left:5px;
+    }
+    
+     .c1{
+        margin-left: 38px;
+    }
+    .c2{
+        margin-left:38px;
+    }
+   
+    
+    .c3{
+        margin-left: 39px;
+    }
+    
+   
+    .line{
+        border-left: 1px solid #C2C2C2;
+        height: 30px;
+        margin-left: 10px;
+    }
+    
+.item3{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    position: relative;
+    color:#5F0089;
+    z-index:12;
+}
+.org{
+    height:50px;
+    width:50px;
+}
+
+
+  .grab{
+    position: relative;
+    top:18px;
+    margin: auto;
+    font-size: 1.4em;
+    font-weight: bold;
+    margin: auto;
+ 
+} 
+
+.time{
+    
+    position:absolute;
+    top:25px;
+    left:54px;
+    font-size: 25px;
+}
+
+.time1{
+    font-size: 14px;
+    position:absolute;
+    top:53px;
+    left:54px;
+
+} 
+.time2{
+    position:absolute;
+    top:27px;
+    left:120px;
+    font-size: 25px;
+}
+
+.time22{
+    font-size: 14px;
+    position:absolute;
+    top:53px;
+    left:118px;
+}
+ 
+.time3{
+    position:absolute;
+    top:28px;
+    left:185px;
+    font-size:25px;
+}
+
+.time33{
+    font-size: 14px;
+    position:absolute;
+    top:53px;
+    left:180px;
+}
+
+.time4{ 
+    position:absolute;
+    top:36px;
+    left:233px;
+    font-size: 24px;
+
+}
+
+    .item5{
+        height:280px;
+    }
+
+    .last{
+        width:280px;
+    }
+    .item6{
+        height:60px;
+        border: 1px solid #EDEDED;
+        background-color:#3D087BDE;
+        position: relative;
+    }
+    .good{
+        font-size: 1.1em;
+        position:relative;
+        top:13px;
+        left:10px;
+       
+    }
+    .item7{
+        height:50px;
+    }
+    button:hover span {
+        display: none;
+      }
+      
+    button:hover:before{
+        font-weight: bolder;
+        font-size: 1.3em;
+        color: white;
+        content: "Party Time!";
+      }
+    .item8{
+        height:60px;
+        width:210px;
+        position: relative;
+        left:35px;
+        padding: 4px;
+        background-color:rgba(72, 72, 202, 0.3);
+        color:hsl(296, 99%, 68%);;
+    }
+ }
+    
