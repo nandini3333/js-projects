@@ -143,7 +143,7 @@ option{
 .time2{
     position:absolute;
     top:22px;
-    left:155px;
+    left:153px;
     font-size: 30px;
 }
 
@@ -157,7 +157,7 @@ option{
 .time3{
     position:absolute;
     top:22px;
-    left:250px;
+    left:242px;
     font-size: 30px;
 }
 
@@ -165,7 +165,7 @@ option{
     font-size: 20px;
     position:absolute;
     top:53px;
-    left:245px;
+    left:240px;
 }
 
 .time4{ 
@@ -232,7 +232,7 @@ button:hover:before{
     font-weight: bolder;
     font-size: 1.3em;
     color: white;
-    content: "Party Time!";
+    /* content: "Party Time!"; */
   }
 
  .item8{
