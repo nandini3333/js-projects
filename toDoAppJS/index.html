@@ -11,13 +11,14 @@
 <body>
     <div class="container">
     <h1 class="task">Tasks <span class="list">List</h1>
+    <div class="no">No Items in the Tasklist</div>
     <span class="i"><i class="fa-solid fa-circle-plus" onclick="addTask()"></i><span>Add Item</span></span>
     </div>
     <div class="popup">
         <div class="popbox">
             <div class="new">Add New Task List</div>
-            <input type="text" id="name" placeholder="Add New List">
-            <button class="add" onclick="add()">Add</button>
+            <input type="text" id="name" placeholder="Add New List" required>
+            <button class="add" id="btn" onclick="add()">Add</button>
             <button class="add close" onclick="close()">Close</button>
         </div>
     </div>
@@ -27,7 +28,7 @@
         <div class="popbox1">
             <div class="new1">Add New Task List</div>
             <input type="text" id="name2" class="text1" placeholder="Add New List">
-            <button class="add1" onclick="add23()">Add</button>
+            <button class="add1" id="addbtn2">Add</button>
             <button class="add1 close1" onclick="close()">Close</button>
         </div>
     </div>
